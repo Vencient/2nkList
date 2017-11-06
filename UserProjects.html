@@ -1,0 +1,59 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/2nk.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+<nav class="navbar navbar-toggleable-md navbar-light">
+	<a href="#" class="navbar-brand text-info">2nkList</a>
+	<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarSupportedContent">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+		<ul class="navbar-nav">
+			<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Upload</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Search</a></li>
+		</ul>
+		<ul class="navbar-nav">
+			<li class="nav-item"><a href="#" class="nav-link">Notify</a></li>
+			<li class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+					<span class="d-inline d-md-none">Username</span>
+					<img class="rounded-circle img-fluid d-none d-md-inline" src="image/AvatarMee.jpg" height="25px" width="25px"/></a>
+				<div class="dropdown-menu">
+					<a href="" class="dropdown-item">Edit Profile</a>
+					<a href="" class="dropdown-item">Manage Portfolio</a>
+					<a href="" class="dropdown-item">To Do List</a>
+				</div>
+			</li>
+			<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+		</ul>
+	</div>
+</nav>
+<hr class="m-0">
+<div class="p-4 container">
+	<img id="main-img" class="rounded img-fluid mb-4 w-100" src="image/victor-cloux_Street_Greytone.jpg"><br>
+	<button class="btn btn-white pr-3" onclick="display('image/victor-cloux_Street_Line.jpg')">Line</button>
+	<button class="btn btn-deepgrey pr-3" onclick="display('image/victor-cloux_Street_Greytone.jpg')">Greytone</button>
+	<button class="btn btn-red pr-3" onclick="display('image/victor-cloux_Street_Color.jpg')">Color</button>
+	<div class="btn-group">
+		<button class="btn btn-blue">Modern</button>
+		<button class="btn btn-red">Street</button>
+		<button class="btn btn-yellow">Night</button>
+	</div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	function display(src){
+		$("#main-img").toggle();
+		$("#main-img").attr('src',src);
+
+		$("#main-img").fadeIn();
+	}
+</script>
+</body>
+</html>
